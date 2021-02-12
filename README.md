@@ -1,14 +1,14 @@
-# troubleshooting-tips
+# Troubleshooting-tips
 Cloud Networking is all about automation and agility. The tools and troubleshooting methodology from on-prem networking is not always applicable.  Here are some useful commands and tips for troubleshooting in Azure Networking.
 
-Commands:
+# Commands:
 Ping/ICMP may not work (e.g. if you're testing reachability of a Standard Public IP or workload behind a Standard Load Balancer).  Instead for Windows VMs:
 1. Powershell command "test-netconnection": e.g. test-netconnection 10.0.0.4 -Port 3389
 2. PSPING: download at https://technet.microsoft.com/en-us/sysinternals/psping.aspx
 For Linux VMs:
 1. tcpping: download as part of tcptraceroute package (sudo apt-get install tcptraceroute) 
 
-Tools:
+# Tools:
 1. Netmon and Wireshark on Windows VMs will be very helpful
 2. tcpdump
 
@@ -30,6 +30,6 @@ Set-AzVMExtension `
 2. On Linux, install NGINX (sudo apt install nginx) 
    To test, connect to:  http://nginxIP
 
-And remember to allow ICMP which by default is not enabled on Windows machins.
+And remember to allow ICMP which by default is not enabled on Windows machines.
 
 
