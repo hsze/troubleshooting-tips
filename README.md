@@ -4,7 +4,7 @@ Cloud Networking is all about automation and agility. The tools and troubleshoot
 # Commands:
 Ping/ICMP may not work (e.g. if you're testing reachability of a Standard Public IP or workload behind a Standard Load Balancer).  Instead for Windows VMs:
 1. Powershell command "test-netconnection": e.g. test-netconnection 10.0.0.4 -Port 3389
-2. PSPING: download at https://technet.microsoft.com/en-us/sysinternals/psping.aspx
+2. PSPING: download [PSPING] (https://technet.microsoft.com/en-us/sysinternals/psping.aspx)
 For Linux VMs:
 1. tcpping: download as part of tcptraceroute package (sudo apt-get install tcptraceroute) 
 
